@@ -1,0 +1,10 @@
+[package]
+name = "juniper-mre"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8.8", default-features = false, features = ["http1", "tokio"] }
+juniper = { version = "0.17.1", default-features = false }
+juniper_axum = { version = "0.3.0", default-features = false }
+tokio = { version = "1.51.0", default-features = false, features = ["macros", "net", "rt-multi-thread"] }
